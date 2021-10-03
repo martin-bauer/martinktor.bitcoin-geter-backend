@@ -1,1 +1,1 @@
-web: ./build/install/martinktor.bitcoin-geter-backend/bin/martinktor.bitcoin-geter-backend
+web: ./build/install/martinktor/bin/martinktor
