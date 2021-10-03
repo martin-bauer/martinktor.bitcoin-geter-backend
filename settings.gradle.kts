@@ -1,0 +1,1 @@
+rootProject.name = "martinktor.bitcoin-geter-backend"
