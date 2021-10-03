@@ -30,10 +30,10 @@ data class CoinDTO(
     val whitepaper: Whitepaper
 )
 
-fun CoinDTO.toCoin(): Coin {
+fun CoinDTO.toCoin(price: String): Coin {
     return Coin(
         id = id,
         name = name,
-        symbol = symbol
+        price = price,
     )
 }

@@ -4,10 +4,10 @@ import io.ktor.client.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
-import martinktor.data.dto.CoinDTO
+import martinktor.data.model.Coin
 
 interface GetService {
-    suspend fun getCoin(): CoinDTO
+    suspend fun getCoin(): Coin
 
     companion object {
         fun get(): GetService {
