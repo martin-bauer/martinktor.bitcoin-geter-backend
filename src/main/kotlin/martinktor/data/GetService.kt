@@ -7,10 +7,11 @@ import io.ktor.client.features.json.serializer.*
 import martinktor.data.model.Coin
 
 interface GetService {
-    suspend fun getCoin(): Coin
+    suspend fun getAllCoinIds(): List<String?>
+    suspend fun getOneCoin(coin: String): Coin
 
     companion object {
-        fun get(): GetService {
+        fun getService(): GetService {
             return GetImpl(
                 client = HttpClient(CIO) {
                     install(JsonFeature) {

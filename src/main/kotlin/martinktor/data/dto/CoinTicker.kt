@@ -1,6 +1,7 @@
 package martinktor.data.dto
 
 import kotlinx.serialization.Serializable
+import martinktor.data.model.Coin
 
 @Serializable
 data class CoinTicker(
@@ -16,3 +17,11 @@ data class CoinTicker(
     val symbol: String = "",
     val total_supply: Int = 0
 )
+
+fun CoinTicker.toCoin(price: String): Coin {
+    return Coin(
+        id = id,
+        name = name,
+        price = price,
+    )
+}
