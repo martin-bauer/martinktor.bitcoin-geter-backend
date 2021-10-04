@@ -22,6 +22,8 @@ fun CoinTicker.toCoin(price: String): Coin {
     return Coin(
         id = id,
         name = name,
-        price = price,
+        symbol = symbol,
+        rank = rank,
+        price = price
     )
 }

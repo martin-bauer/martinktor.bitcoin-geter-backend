@@ -4,7 +4,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Coin(
-     val id: String,
-     val name: String,
-     var price: String,
+    val id: String,
+    val name: String,
+    val symbol: String,
+    val rank: Int,
+    var price: String,
 )
